@@ -16,7 +16,8 @@ type conf struct {
 	Experience    string `yaml:"experience"`
 	Help          string `yaml:"help"`
 	Magic         string `yaml:"magic"`
-	SubAttributes string `yaml:subattributes`
+	SubAttributes string `yaml:"subattributes"`
+	Weapons       string `yaml:"weapons"`
 }
 
 func (c *conf) getYml() *conf {
@@ -103,6 +104,16 @@ func subAttr(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.SubAttributes)
+	bot.Send(msg)
+
+	return true, nil
+}
+
+func weapons(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+	var c conf
+	c.getYml()
+
+	msg := tgbotapi.NewMessage(chatId, c.Weapons)
 	bot.Send(msg)
 
 	return true, nil

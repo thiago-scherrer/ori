@@ -1,5 +1,6 @@
 help: |
   /ajuda - Exibe essa ajuda.
+  /armas - Lista as armas disponíveis no jogo
   /classes - Lista as clases disponíveis para jogar.
   /combate - Lista os tipos de combates disponíveis.
   /experiencia - Como calcular a experiência.
@@ -208,3 +209,28 @@ subattributes: |
   Teste de Personagem (TdP): É o teste mais importante um herói deseje realizar e para
   emular testes de atributos. Para usá-lo basta lançar 1d20 e somar o seu nível. O resultado
   deve ser superior a 15 para se obter um sucesso. Um 20 no dado é sempre um sucesso.
+
+weapons: |
+  Adaga: 1d4
+    Iniciativa +8
+
+  Bordão: 1d4
+    Iniciativa +7
+
+  Arco curto: 1d6
+    Iniciativa +3
+
+  Espada curta: 1d6
+    Iniciativa +7
+
+  Espada Longa: 1d8
+    Iniciativa +5
+
+  Machado: 1d8
+    Iniciativa +3
+
+  Maça: 1d8
+    Iniciativa +3
+
+  Montante: 1d10
+    Iniciativa +1

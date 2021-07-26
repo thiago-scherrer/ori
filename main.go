@@ -55,6 +55,8 @@ func start(bot *tgbotapi.BotAPI) (bool, error) {
 			breed(bot, chatId)
 		case "/subatributos":
 			subAttr(bot, chatId)
+		case "/armas":
+			weapons(bot, chatId)
 		default:
 			help(bot, chatId)
 		}
