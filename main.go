@@ -43,8 +43,18 @@ func start(bot *tgbotapi.BotAPI) (bool, error) {
 		switch update.Message.Text {
 		case "/classes":
 			classes(bot, chatId)
-		case "/lista-de-magia":
+		case "/combate":
+			combat(bot, chatId)
+		case "/experiencia":
+			experience(bot, chatId)
+		case "/listamagia":
 			magic(bot, chatId)
+		case "/raças":
+			breed(bot, chatId)
+		case "/racas":
+			breed(bot, chatId)
+		case "/subatributos":
+			subAttr(bot, chatId)
 		default:
 			help(bot, chatId)
 		}

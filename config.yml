@@ -1,9 +1,44 @@
 help: |
-  Como usar:
-  /classes - lista as clases disponíveis para jogar
-  /lista-de-magina - lista todas as magias possíveis e seus níveis
-  /help - exibe essa ajuda
- 
+  /ajuda - Exibe essa ajuda.
+  /classes - Lista as clases disponíveis para jogar.
+  /combate - Lista os tipos de combates disponíveis.
+  /experiencia - Como calcular a experiência.
+  /listamagia - Lista todas as magias possíveis e seus níveis.
+  /racas - Lista de raçãs disponíveis.
+  /subatributos - Lista de Sub Atributos disponíveis.
+
+breed: |
+  Apenas as 4 classes básicas estão disponíveis
+  aos jogadores. São elas: Homens de Armas, La-
+  drões, Clérigos e Magos
+
+  Humanos: são seres espertos, adaptáveis e extrema-
+  mente ambiciosos. Possuem movimento 9, e realizam um
+  teste de personagem por dia, como se tivessem um nível
+  a mais.
+
+  Elfos: são criaturas longevas e ligadas ao natural e a
+  magia. Possuem movimento 9, recebem um bônus de +1
+  nos danos causados por arcos, e calculam as magias diárias
+  como se tives-sem um nível a mais. Em contra partida um
+  elfo jamais possui como dado de vida, um dado superior
+  ao d8.
+
+  Anões: são seres resistentes, honrados e turrões,
+  ligados à terra e aos metais. Possuem movimen-
+  to 6, e realizam todos os testes de per-
+  sonagem para resistir a qualquer efeito
+  como se tivessem dois nível a mais.
+
+  Halflings: são criaturas espertas e
+  ágeis, ligadas ao campo e o conforto.
+  Possuem movimento 6, e realizam os tes-
+  tes de perso-nagem para se esconderem
+  ou para furtarem (se ladrões) como se
+  tivessem um nível a mais. Halflings não
+  podem usar armas que causem dano su-
+  perior a 1d6.
+
 classes: |
   Homens de Armas: são ótimos combatentes, usam bem as
   armas mas são péssimos em se defenderem de efeitos má-
@@ -26,67 +61,150 @@ classes: |
   testes de personagem por dia por nível possuído para cura-
   rem 1d8+2 pontos de vida ou expulsarem a mesma quantida-
   de de dados de vida de mortos vivos ao seu redor. Só podem
-  usar maças e bor-dões, mas podem usar qualquer tipo de ar-
+  usar maças e bordões, mas podem usar qualquer tipo de ar-
   madura.
 
   Magos: são estudiosos das artes arcanas que buscam con-
   trolar a impetuosa força da magia. Recebem um penalizador
-  de –1 em todos os danos causados por armas (só podem usar
+  de -1 em todos os danos causados por armas (só podem usar
   adagas e bordões), 1d4 pontos de vida por nível, e não podem
   usar ne-nhum tipo de armadura. Em contra partida, podem
   lançar diaria-ment
 
+combat: |
+  O combate é a parte mais emocionante
+  de um jogo de RPG.
+
+  Armas: são as ferramentas usadas para desferir golpes
+  e causar danos aos seus oponentes. As armas são descri-
+  tas nos círculos ao lado.
+
+  Armaduras: São proteções confeccionadas de couro,
+  malha de metal ou chapas metálicas que visam impedir
+  que os golpes causem um dano ainda maior aos
+  combatentes. Existem 3 tipos de armaduras e um escudo que
+  é o único que pode ser usados em conjunto com outra
+  armadura. Um Escudo melhora a CA em +1. Uma armadura de
+  couro em +2, a armadura de cota em +4 e a armadura de placas
+  em+6 além de reduzir em 1 o movimento.
+
+  Iniciativa: Todos os envolvidos no combate rolam 1d10 e somam
+  a iniciativa da arma (caso ataquem) ou o seu CA (caso façam outras
+  ações). Os maiores resultados agem primeiro.
+
+  Ataque: Lance 1d20, some o seu nível e tire um resultado maior
+  que o CA do alvo para acertar e causar dano. Um resultado menor
+  significa um erro, um resultado igual à CA significa que você acertou
+  o golpe mas ele não foi forte o suficiente para causar nenhum dano.
+
+  Dano: É a quantidade de pontos de vida que o seu golpe cau-sou no seu
+  oponente. Você só causa dano se acertar o ataque. Outras formas de dano
+  são encontradas com freqüência nos mundos de aventura, como fogo, ácido,
+  quedas, e etc. Normal-mente o mestre deve determinar os danos de 4 formas:
+    - pequeno (dano de 1d4), médio (dano de 2d6)
+    - grande (dano de 5d6) e imenso (dano de 10d6)
+
+  Cura e Morte: Personagens feridos podem ser curados ou morrem se chegarem
+  a acumular -10 pontos de vida. Essa cura pode ser natural (1 ponto de vida
+  por nível a cada dia de repou-so) ou mágica através de um clérigo.
+  Personagens que cheguem a zero pontos de vida caem desacordados e devem
+  fazer testes de personagem a cada rodada. Sucesso recupera 3 PVs, falha significa
+  a perda de 3 PVs. Personagens que cheguem a -10 PVs estão mortos imediavelmente.
+
+experience: |
+  Ao terminar a seção de jogo, o mestre deve recompen-
+  sar os sobreviventes com pontos de experiência. Estes
+  pontos represen-tam o aperfeiçoamento e o acúmulo de
+  poder do personagem.
+
+  O grupo de personagem deve receber 100 XPs por cada
+  dado de vida de monstro derrotado e este valor deve ser
+  dividido igualita-riamente entre todos os membros do
+  grupo.
+
+  Estes XPs vão se acumulando até que o personagem
+  passe de nível. Para passar de nível ele deve acumular
+  2000 XPs vezes o seu nível atual. Assim para passar pro
+  segundo deve acumular 2.000 XPs, pro terceiro 4.000
+  XPs, pro terceiro 6. 000 XPs, e assim sucessivamente até
+  o limite de 20.000 XPs no décimo nível quan-do o per-
+  sonagem atinge a evolução máxima permitida por estas
+  regras.
+
 magic: |
-  1 Abrir / Trancar: Abre ou tranca portas e recipientes por 1d6 turnos por nível
+  1 Abrir / Trancar: Abre ou tranca portas e recipientes por 1d6 turnos por nível.
 
   1 Detectar magia: Detecta efeitos, itens e magos a nível x10 metros por 1d4 Rod.
 
-  1 Enfeitiçar pessoas: Alvo fica simpatizado pelo mago pelo nível x 2 horas
+  1 Enfeitiçar pessoas: Alvo fica simpatizado pelo mago pelo nível x 2 horas.
 
   1 Escudo arcano: Adiciona escudo de força ao mago melhorando a CA em 2.
 
-  1 Ler magias: Permite ler pergaminhos, livros e runas mágicas
+  1 Ler magias: Permite ler pergaminhos, livros e runas mágicas.
 
-  1 Luz: Cria luz mágica de 10 m de raio por 1 hora por nível
+  1 Luz: Cria luz mágica de 10 m de raio por 1 hora por nível.
 
-  1 Mísseis mágicos: Cria 1 míssil a cada 3 níveis que causam 1d4+1 de dano cada
+  1 Mísseis mágicos: Cria 1 míssil a cada 3 níveis que causam 1d4+1 de dano cada.
 
-  1 Proteção caos/ordem: +1 no CA e nos TdP por nível c/ o caos/ordem
+  1 Proteção caos/ordem: +1 no CA e nos TdP por nível c/ o caos/ordem.
 
-  1 Sono: Desacorda 1d4+1 DVs por 1d4 horas 5 níveis do mago
+  1 Sono: Desacorda 1d4+1 DVs por 1d4 horas 5 níveis do mago.
 
-  2 Detectar caos/ordem: Detecta caos ou ordem a nível x10 m por 1d4 rodadas
+  2 Detectar caos/ordem: Detecta caos ou ordem a nível x10 m por 1d4 rodadas.
 
-  2 Escuridão 4,5m: Cria escuridão mágica por 1d4 rodadas por nível
+  2 Escuridão 4,5m: Cria escuridão mágica por 1d4 rodadas por nível.
 
   2 Força Arcana: Bônus de +1 nos testes a cada 3 níveis do mago por 1d6 Rod.
 
   2 Invisibilidade: alvo invisível por 1d6 rodadas ou até atacar alguém.
 
-  2 Levitação: Plana seguramente até 2 metros por rodada em direção chão
+  2 Levitação: Plana seguramente até 2 metros por rodada em direção chão.
 
-  2 Névoa fétida: Todos em raio de 3 m ficam nauseados por 1d4 Rod. por nível
+  2 Névoa fétida: Todos em raio de 3 m ficam nauseados por 1d4 Rod. por nível.
 
-  2 PES: Lê pensamentos de pessoas com menos níveis a até 10m/nível
+  2 PES: Lê pensamentos de pessoas com menos níveis a até 10m/nível.
 
-  2 Reflexos: 1d4+1 imagens perfeitas do mago são criadas
+  2 Reflexos: 1d4+1 imagens perfeitas do mago são criadas.
 
-  3 Bola de Fogo: Explosão de fogo até 6m causando 1d6 de dano por nível
+  3 Bola de Fogo: Explosão de fogo até 6m causando 1d6 de dano por nível.
 
-  3 Dissipar Magia: 5% de chance de anular/cancelar efeitos mágicos por nível
+  3 Dissipar Magia: 5% de chance de anular/cancelar efeitos mágicos por nível.
 
   3 Imobilizar Pessoas: Imobiliza totalmente um ser bípede e humanóide.
 
-  3 Invisibilidade 3m: Como invisibilidade mas para uma área de 3 metros
+  3 Invisibilidade 3m: Como invisibilidade mas para uma área de 3 metros.
 
-  3 Lentidão: Alvo recebe penalidade de 2 nos testes por 1 rodada/nível
+  3 Lentidão: Alvo recebe penalidade de 2 nos testes por 1 rodada/nível.
 
-  3 Relâmpago: Cria 1 raio/3níveis que causam 1d8+1 de dano/ 2níveis
+  3 Relâmpago: Cria 1 raio/3níveis que causam 1d8+1 de dano/ 2níveis.
 
-  4 Vôo: Voa até 36 metros por 1d6 rodadas (jogadas secretamente)
+  4 Vôo: Voa até 36 metros por 1d6 rodadas (jogadas secretamente).
 
   4 Metamorfose: Muda raça, sexo e aparência em até 10% a cada 3 níveis.
 
-  4 Muro de Energia: Muro repele ataques físicos e mágicos por 1d4 rod/3níveis
+  4 Muro de Energia: Muro repele ataques físicos e mágicos por 1d4 rod/3níveis.
 
-  5 Palavra da Morte: Mata alvo com pelo menos a metade dos níveis do mago
+  5 Palavra da Morte: Mata alvo com pelo menos a metade dos níveis do mago.
+
+subattributes: |
+  São habilidades secundárias de um personagem que podem ou não evoluir junto com o
+  nível de um personagem.
+
+  Atributos: O OD Pocket Dragon não possui atributos. Todos os testes necessários a
+  um personagem devem ser realizados com um teste de personagem.
+
+  Classe de Armadura (CA): Determina a proteção de um perso-nagem aos golpes que
+  receberá em combate. É calculado soman-do 10 ao nível dividido por 4, somando
+  o bônus de defesa de armaduras e escudos (se houver).
+
+  Pontos de Vida (PVs): É a quantidade de energia vital que um personagem possuir.
+  Heróis com zero pontos de vida ficam desacordados enquanto que monstros estão mortos.
+  Um herói ganha 1 dado de vida por nível de acordo com sua classe ou raça (como os elfos).
+
+  Movimento (Mov.): A quantidade de espaço que um persona-gem pode percorrer em uma rodada
+  usando o máximo de sua força de deslocamento. O movimento é definido pela raça, mas
+  pode ser modificado por Magias, armaduras e outros efeitos.
+
+  Teste de Personagem (TdP): É o teste mais importante um herói deseje realizar e para
+  emular testes de atributos. Para usá-lo basta lançar 1d20 e somar o seu nível. O resultado
+  deve ser superior a 15 para se obter um sucesso. Um 20 no dado é sempre um sucesso.

@@ -10,9 +10,13 @@ import (
 )
 
 type conf struct {
-	Help    string `yaml:"help"`
-	Magic   string `yaml:"magic"`
-	Classes string `yaml:"classes"`
+	Breed         string `yaml:"breed"`
+	Classes       string `yaml:"classes"`
+	Combat        string `yaml:"combat"`
+	Experience    string `yaml:"experience"`
+	Help          string `yaml:"help"`
+	Magic         string `yaml:"magic"`
+	SubAttributes string `yaml:subattributes`
 }
 
 func (c *conf) getYml() *conf {
@@ -34,11 +38,51 @@ func (c *conf) getYml() *conf {
 	return c
 }
 
+func breed(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+	var c conf
+	c.getYml()
+
+	msg := tgbotapi.NewMessage(chatId, c.Breed)
+	bot.Send(msg)
+
+	return true, nil
+}
+
 func classes(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Classes)
+	bot.Send(msg)
+
+	return true, nil
+}
+
+func combat(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+	var c conf
+	c.getYml()
+
+	msg := tgbotapi.NewMessage(chatId, c.Combat)
+	bot.Send(msg)
+
+	return true, nil
+}
+
+func experience(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+	var c conf
+	c.getYml()
+
+	msg := tgbotapi.NewMessage(chatId, c.Experience)
+	bot.Send(msg)
+
+	return true, nil
+}
+
+func help(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+	var c conf
+	c.getYml()
+
+	msg := tgbotapi.NewMessage(chatId, c.Help)
 	bot.Send(msg)
 
 	return true, nil
@@ -54,11 +98,11 @@ func magic(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
 	return true, nil
 }
 
-func help(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func subAttr(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
 	var c conf
 	c.getYml()
 
-	msg := tgbotapi.NewMessage(chatId, c.Help)
+	msg := tgbotapi.NewMessage(chatId, c.SubAttributes)
 	bot.Send(msg)
 
 	return true, nil
