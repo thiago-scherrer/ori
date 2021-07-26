@@ -3,9 +3,7 @@
 Bot para para ajudar a jogar o RPG Pocket Dragon
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/thiago-scherrer/ori)](https://goreportcard.com/report/github.com/thiago-scherrer/ori)
-
 [![Security check](https://github.com/thiago-scherrer/ori/actions/workflows/security_scan.yml/badge.svg?branch=main)](https://github.com/thiago-scherrer/ori/actions/workflows/security_scan.yml)
-
 [![Test](https://github.com/thiago-scherrer/ori/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/thiago-scherrer/ori/actions/workflows/test.yml)
 
 ## Requerimentos
