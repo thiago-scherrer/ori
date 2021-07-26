@@ -212,25 +212,25 @@ subattributes: |
 
 weapons: |
   Adaga: 1d4
-    Iniciativa +8
+  Iniciativa +8
 
   Bordão: 1d4
-    Iniciativa +7
+  Iniciativa +7
 
   Arco curto: 1d6
-    Iniciativa +3
+  Iniciativa +3
 
   Espada curta: 1d6
-    Iniciativa +7
+  Iniciativa +7
 
   Espada Longa: 1d8
-    Iniciativa +5
+  Iniciativa +5
 
   Machado: 1d8
-    Iniciativa +3
+  Iniciativa +3
 
   Maça: 1d8
-    Iniciativa +3
+  Iniciativa +3
 
   Montante: 1d10
-    Iniciativa +1
+  Iniciativa +1
