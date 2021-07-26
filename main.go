@@ -11,41 +11,44 @@ func main() {
 	token := os.Getenv("TG_TOKEN")
 
 	if token == "" {
-		log.Panic("TG_TOKEN required!")
+		log.Fatalln("TG_TOKEN required!")
 	}
 
 	bot, err := tgbotapi.NewBotAPI(token)
 	if err != nil {
-		log.Panic(err)
+		log.Fatalln(err)
 	}
 
-	d := os.Getenv("DEBUG")
-	var debug bool
-	if d == "" || d == "false" {
-		debug = false
-	} else {
-		debug = true
-	}
-
-	bot.Debug = debug
-
+	bot.Debug = false
 	log.Printf("Authorized on account %s", bot.Self.UserName)
 
-	u := tgbotapi.NewUpdate(0)
+	start(bot)
+}
+
+func start(bot *tgbotapi.BotAPI) (bool, error) {
+	u := tgbotapi.NewUpdate(5)
 	u.Timeout = 60
 
 	updates, err := bot.GetUpdatesChan(u)
+	if err != nil {
+		log.Fatalln(err)
+	}
 
 	for update := range updates {
-		if update.Message == nil { // ignore any non-Message Updates
+		if update.Message == nil {
 			continue
 		}
+		chatId := update.Message.Chat.ID
 
-		log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
+		switch update.Message.Text {
+		case "/classes":
+			classes(bot, chatId)
+		case "/lista-de-magia":
+			magic(bot, chatId)
+		default:
+			help(bot, chatId)
+		}
 
-		msg := tgbotapi.NewMessage(update.Message.Chat.ID, update.Message.Text)
-		msg.ReplyToMessageID = update.Message.MessageID
-
-		bot.Send(msg)
 	}
+	return true, nil
 }

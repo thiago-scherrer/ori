@@ -1,0 +1,92 @@
+help: |
+  Como usar:
+  /classes - lista as clases disponíveis para jogar
+  /lista-de-magina - lista todas as magias possíveis e seus níveis
+  /help - exibe essa ajuda
+ 
+classes: |
+  Homens de Armas: são ótimos combatentes, usam bem as
+  armas mas são péssimos em se defenderem de efeitos má-
+  gicos. Recebem +1 nos danos quando acertam seus golpes
+  e 1d10 pontos de vida por nível. Pode usar qualquer arma e
+  qualquer tipo de armadura.
+
+  Ladrões: são ótimos na arte de se esconderem e de furta-
+  rem coisas sem que sejam percebidos. Não recebem nenhum
+  bônus de dano e recebem 1d6 pontos de vida por nível. La-
+  drões podem realizar um teste de personagem para se escon-
+  derem. Quando escondidos podem realizar 1 ataque soman-
+  do seu nível ao seu dano, em contra partida só podem usar
+  armaduras de couro e armas que causem até 1d6 pontos de
+  dano.
+
+  Clérigos: são homens santos que percorrem o mundo di-
+  vulgan-do sua religião. Não recebem nenhum bônus de dano
+  e recebem 1d8 pontos de vida por nível. Podem realizar dois
+  testes de personagem por dia por nível possuído para cura-
+  rem 1d8+2 pontos de vida ou expulsarem a mesma quantida-
+  de de dados de vida de mortos vivos ao seu redor. Só podem
+  usar maças e bor-dões, mas podem usar qualquer tipo de ar-
+  madura.
+
+  Magos: são estudiosos das artes arcanas que buscam con-
+  trolar a impetuosa força da magia. Recebem um penalizador
+  de –1 em todos os danos causados por armas (só podem usar
+  adagas e bordões), 1d4 pontos de vida por nível, e não podem
+  usar ne-nhum tipo de armadura. Em contra partida, podem
+  lançar diaria-ment
+
+magic: |
+  1 Abrir / Trancar: Abre ou tranca portas e recipientes por 1d6 turnos por nível
+
+  1 Detectar magia: Detecta efeitos, itens e magos a nível x10 metros por 1d4 Rod.
+
+  1 Enfeitiçar pessoas: Alvo fica simpatizado pelo mago pelo nível x 2 horas
+
+  1 Escudo arcano: Adiciona escudo de força ao mago melhorando a CA em 2.
+
+  1 Ler magias: Permite ler pergaminhos, livros e runas mágicas
+
+  1 Luz: Cria luz mágica de 10 m de raio por 1 hora por nível
+
+  1 Mísseis mágicos: Cria 1 míssil a cada 3 níveis que causam 1d4+1 de dano cada
+
+  1 Proteção caos/ordem: +1 no CA e nos TdP por nível c/ o caos/ordem
+
+  1 Sono: Desacorda 1d4+1 DVs por 1d4 horas 5 níveis do mago
+
+  2 Detectar caos/ordem: Detecta caos ou ordem a nível x10 m por 1d4 rodadas
+
+  2 Escuridão 4,5m: Cria escuridão mágica por 1d4 rodadas por nível
+
+  2 Força Arcana: Bônus de +1 nos testes a cada 3 níveis do mago por 1d6 Rod.
+
+  2 Invisibilidade: alvo invisível por 1d6 rodadas ou até atacar alguém.
+
+  2 Levitação: Plana seguramente até 2 metros por rodada em direção chão
+
+  2 Névoa fétida: Todos em raio de 3 m ficam nauseados por 1d4 Rod. por nível
+
+  2 PES: Lê pensamentos de pessoas com menos níveis a até 10m/nível
+
+  2 Reflexos: 1d4+1 imagens perfeitas do mago são criadas
+
+  3 Bola de Fogo: Explosão de fogo até 6m causando 1d6 de dano por nível
+
+  3 Dissipar Magia: 5% de chance de anular/cancelar efeitos mágicos por nível
+
+  3 Imobilizar Pessoas: Imobiliza totalmente um ser bípede e humanóide.
+
+  3 Invisibilidade 3m: Como invisibilidade mas para uma área de 3 metros
+
+  3 Lentidão: Alvo recebe penalidade de 2 nos testes por 1 rodada/nível
+
+  3 Relâmpago: Cria 1 raio/3níveis que causam 1d8+1 de dano/ 2níveis
+
+  4 Vôo: Voa até 36 metros por 1d6 rodadas (jogadas secretamente)
+
+  4 Metamorfose: Muda raça, sexo e aparência em até 10% a cada 3 níveis.
+
+  4 Muro de Energia: Muro repele ataques físicos e mágicos por 1d4 rod/3níveis
+
+  5 Palavra da Morte: Mata alvo com pelo menos a metade dos níveis do mago
