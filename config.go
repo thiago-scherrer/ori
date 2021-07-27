@@ -45,7 +45,10 @@ func breed(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Breed)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func classes(bot *tgbotapi.BotAPI, chatId int64) {
@@ -53,7 +56,10 @@ func classes(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Classes)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func combat(bot *tgbotapi.BotAPI, chatId int64) {
@@ -61,7 +67,10 @@ func combat(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Combat)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func experience(bot *tgbotapi.BotAPI, chatId int64) {
@@ -69,7 +78,10 @@ func experience(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Experience)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func help(bot *tgbotapi.BotAPI, chatId int64) {
@@ -77,7 +89,10 @@ func help(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Help)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func magic(bot *tgbotapi.BotAPI, chatId int64) {
@@ -85,7 +100,10 @@ func magic(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Magic)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func subAttr(bot *tgbotapi.BotAPI, chatId int64) {
@@ -93,7 +111,10 @@ func subAttr(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.SubAttributes)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
 }
 
 func weapons(bot *tgbotapi.BotAPI, chatId int64) {
@@ -101,5 +122,9 @@ func weapons(bot *tgbotapi.BotAPI, chatId int64) {
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Weapons)
-	bot.Send(msg)
+	m, err := bot.Send(msg)
+	if err != nil {
+		log.Println(m, err)
+	}
+
 }

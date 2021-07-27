@@ -25,7 +25,7 @@ func main() {
 	start(bot)
 }
 
-func start(bot *tgbotapi.BotAPI) (bool, error) {
+func start(bot *tgbotapi.BotAPI) {
 	u := tgbotapi.NewUpdate(5)
 	u.Timeout = 60
 
@@ -60,7 +60,5 @@ func start(bot *tgbotapi.BotAPI) (bool, error) {
 		default:
 			help(bot, chatId)
 		}
-
 	}
-	return true, nil
 }
