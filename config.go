@@ -40,82 +40,66 @@ func (c *conf) getYml() *conf {
 	return c
 }
 
-func breed(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func breed(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Breed)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func classes(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func classes(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Classes)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func combat(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func combat(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Combat)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func experience(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func experience(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Experience)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func help(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func help(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Help)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func magic(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func magic(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Magic)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func subAttr(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func subAttr(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.SubAttributes)
 	bot.Send(msg)
-
-	return true, nil
 }
 
-func weapons(bot *tgbotapi.BotAPI, chatId int64) (bool, error) {
+func weapons(bot *tgbotapi.BotAPI, chatId int64) {
 	var c conf
 	c.getYml()
 
 	msg := tgbotapi.NewMessage(chatId, c.Weapons)
 	bot.Send(msg)
-
-	return true, nil
 }
