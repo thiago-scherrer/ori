@@ -4,6 +4,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"path/filepath"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"gopkg.in/yaml.v2"
@@ -26,7 +27,7 @@ func (c *conf) getYml() *conf {
 		log.Fatalln("YML_FILE required!")
 	}
 
-	ymlF, err := ioutil.ReadFile(ymlFile)
+	ymlF, err := ioutil.ReadFile(filepath.Clean(ymlFile))
 	if err != nil {
 		log.Fatalln(err)
 	}
